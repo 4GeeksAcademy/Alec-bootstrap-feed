@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>feed bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-brand d-flex m-1 bg-light p-2">
+            <i class="bi-instagram fs-4 mx-1"></i>
+            <a href="#" class="text-decoration-none text-black fs-4">Instagram</a>
+            <div class="col d-flex justify-content-end">
+
+                <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new account
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Caption:</h6>
+                                <div class="input-group mb-2">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-light bi-camera-fill border-1 "></button>
+                                <button type="button" class="btn btn-light bi bi-geo-alt-fill border-1"></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle mx-1" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-labelledby="navbarDropdown">
+                        <i class="bi bi-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="card-tab" data-bs-toggle="tab" data-bs-target="#cards-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
+                        <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="row g-1 mt-1">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=1" class="img-fluid" alt="Foto 1">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=2" class="img-fluid" alt="Foto 2">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=3" class="img-fluid" alt="Foto 3">
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=4" class="img-fluid" alt="Foto 4">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=5" class="img-fluid" alt="Foto 5">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=6" class="img-fluid" alt="Foto 6">
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=7" class="img-fluid" alt="Foto 7">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=8" class="img-fluid" alt="Foto 8">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="https://picsum.photos/1200?random=9" class="img-fluid" alt="Foto 9">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content" id="myTabContent">
+        
+        <div class="tab-pane fade show active" id="cards-tab-pane" role="tabpanel" aria-labelledby="card-tab"
+            tabindex="0">
+            <div class="d-flex justify-content-center mt-3">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">12/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=1" class="img-fluid" alt="...">
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">12/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=2" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">12/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=3" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">11/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=4" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2 text-secondary"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">10/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=5" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">9/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=6" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-2 ">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">8/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=7" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">7/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=8" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-lg mb-5 rounded" style="width: 30rem;">
+                    <div class="header d-flex">
+                        <h5 class="card-title p-3">Card with stretched link</h5>
+                        <span class="position-absolute top-0 end-0 me-2 my-3 text-secondary">6/14</span>
+                    </div>
+                    <img src="https://picsum.photos/1200?random=9" class="img-fluid" alt="...">
+
+                    <div class="post-footer m-1">
+                        <div class="fs-4 my-1 mx-1">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                            <i class="bi bi-bookmark position-absolute end-0 mx-2"></i>
+                        </div>
+                        <p class="fw-bold mt-1">5.679 Me gusta</p>
+                        <a href="#" class="text-decoration-none text-secondary">ver los 364 comentarios</a>
+                        <br>
+                        <input class="border-0 my-2" type="text" placeholder="Añade un comentario...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
